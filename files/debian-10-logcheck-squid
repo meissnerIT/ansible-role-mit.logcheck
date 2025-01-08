@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: \/lib\/systemd\/system\/squid.service:7: PIDFile= references path below legacy directory \/var\/run\/, updating \/var\/run\/squid.pid → \/run\/squid.pid; please update the unit file accordingly\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ squid\[[0-9]+\]: .*

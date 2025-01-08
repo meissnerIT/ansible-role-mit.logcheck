@@ -1,0 +1,2 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] 3w-sas: scsi[0-9]+: AEN: INFO \(0x[0-9]+:0x[0-9]+\): Battery charging (started|completed):\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] 3w-sas: scsi[0-9]+: AEN: INFO \(0x[0-9]+:0x[0-9]+\): Battery capacity test is overdue:\.

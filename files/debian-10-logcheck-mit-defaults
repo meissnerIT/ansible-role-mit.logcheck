@@ -1,0 +1,59 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/local/sbin/zabbix-check-upgrades: Restarting .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ansible-.*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ avahi-daemon\[[0-9]+\]: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Selected source .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Source .* replaced with .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cron-apt:.*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Activating via systemd: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Successfully activated service .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: DHCPREQUEST for [0-9\.]+ on .* to [0-9\.]+ port [0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpcd\[[0-9]+\]: wlan0: no IPv6 Routers available
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Delivery complete, .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: From: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Message-Id: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Rescanning queue\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Sending failed: Temporary error in gethostbyname
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Sent file\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Starting delivery.*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Trigger pulled\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Failed: Connect failed
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Failed: Connect failed
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Succeeded: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix/smtpd\[[0-9]+\]: disconnect from localhost\[[0-9\.]+] helo=[0-9]+ mail=[0-9]+ rcpt=[0-9]+ data=[0-9]+ quit=[0-9]+ commands=[0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rsyslogd:  \[origin software="rsyslogd" swVersion="[0-9\.]+" x-pid="[0-9]+" x-info="https://www.rsyslog.com"\] rsyslogd was HUPed
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP\[[0-9]+\]: Cannot open nonexisting.meissner.it:25
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sSMTP\[[0-9]+\]: Unable to locate nonexisting.meissner.it
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: New session [a-z0-9]+ of user [0-9a-zA-Z]+\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Removed session [a-z0-9]+\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Session [a-z0-9]+ logged out\. Waiting for processes to exit\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Synchronized to time server for the first time .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Timed out waiting for reply from .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-tmpfiles\[[0-9]+\]: \[/usr/lib/tmpfiles.d/.*\.conf:1\] .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-udevd\[[0-9]+\]: Using default interface naming scheme 'v240'\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-udevd\[[0-9]+\]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd: pam_unix\(systemd-user:session\): session (open|clos)ed for user .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[1\]: (Created|Removed) slice User Slice of .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[1\]: .*: Consumed .* CPU time\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[1\]: Startup finished in [0-9\.]+s\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[1\]: getty@tty1\.service: Current command vanished from the unit file, execution of the command list won't be resumed\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: .*\.(mount|scope|service|socket|timer): Succeeded\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Closed .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Listening on .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Reload(ed|ing) .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Start(ed|ing) .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in [0-9\.]+s\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in [0-9]+ms\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: gpgconf: fatal error \(exit status 1\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: gpgconf: running /usr/bin/gpg-agent failed \(exitcode=2\): General error
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zabbix_agentd\[[0-9]+\]: Press Ctrl\+C to exit\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zabbix_agentd\[[0-9]+\]: Starting Zabbix Agent \[[._[:alnum:]-]+\]. Zabbix 4.0.4 \(revision 89349\)\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zed: eid=[0-9]+ class=(history_event|scrub(\.|_)(start|finish)) (pool|pool_guid)=[a-zA-Z0-9']+
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[0-9]+\]: No longer monitoring snapshot .*\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[0-9]+\]: dmeventd ready for processing\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[0-9]+\]: dmeventd shutting down\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dmeventd\[[0-9]+\]: dmeventd was idle for 3600 second\(s\), exiting\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? TCP: tcp_parse_options: Illegal window scaling value [0-9]+ > [0-9]+ received
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? conntrack: generic helper won't handle protocol 47\. Please consider loading the specific helper module\.
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hrtimer: interrupt took [0-9]+ ns
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel\.perf_event_max_sample_rate to [0-9]+

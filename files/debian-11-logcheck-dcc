@@ -1,0 +1,7 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: .* listening to /usr/local/dcc/dccifd for ASCII protocol
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: flush #[0-9]+ OK from .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: no DCC answer from .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: truncated request
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: no recipients specified
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: write\(MTA socket,[0-9]+\): Broken pipe
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dccifd\[[0-9]+\]: .* detected [0-9]+ spam, ignored for [0-9]+, rejected for [0-9]+, and discarded for [0-9]+ targets among [0-9]+ total messages for [0-9]+ targets since .*

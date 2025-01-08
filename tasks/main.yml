@@ -1,0 +1,62 @@
+---
+
+- name: Install logcheck
+  apt:
+    pkg:
+      - logcheck
+      - logcheck-database   # required with Debian 11
+
+- name: Add user logcheck to group systemd-journal
+  user:
+    name: logcheck
+    groups: systemd-journal
+    append: yes
+  when: (ansible_distribution == "Debian" and ansible_distribution_major_version|int >= 12)
+
+- name: "logcheck rules: mit-defaults"
+  copy:
+    src: "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-mit-defaults"
+    dest: /etc/logcheck/ignore.d.server/mit-defaults
+
+# Security Events for sudo must be placed in /etc/logcheck/violations.ignore.d/local
+# See roles/mit.zabbix-agent.check-upgrades/tasks/default.yml
+- name: logcheck-local-inventory_hostname -> /etc/logcheck/ignore.d.server/mit-defaults-local
+  copy:
+    src: "{{ copy_file }}"
+    dest: /etc/logcheck/ignore.d.server/mit-defaults-local
+  vars:
+    copy_file: "{{ lookup('ansible.builtin.first_found', files, errors='ignore') }}"
+    files:
+      - logcheck-local-{{ inventory_hostname }}
+  when: copy_file != ""
+
+- name: "logcheck rules: special packages"
+  copy: 
+    src: "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-{{ item }}"
+    dest: "/etc/logcheck/ignore.d.server/mit-defaults-{{ item }}"
+  with_items:
+    - "{{ mit_logcheck }}"
+  when: mit_logcheck is defined
+
+- name: "logcheck rules: mariadb"
+  copy:
+    src: "{{ lookup('first_found', findme) }}"
+    # mit-defaults-mariadb-10.5 will be ignored by logcheck because of the dot
+    dest: "/etc/logcheck/ignore.d.server/mit-defaults-mariadb-{{ mariadb_server_version | replace('.','_') }}"
+  vars:
+    findme:
+      - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-mariadb-{{ mariadb_server_version | replace('.','_') }}"
+      - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-mariadb"
+  when: mariadb_server_version is defined
+
+- name: Security Events for sudo
+  # The file has to be named "local", either "a", "0-mit-zabbix-agent-check-upgrades"
+  # or "mit-zabbix-agent-check-upgrades" do not work. Test with:
+  # sudo -u logcheck logcheck -o -t -d -l /var/log/auth.log
+  lineinfile:
+    create: yes
+    path: /etc/logcheck/violations.ignore.d/local
+    # ansible
+    line: '^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: [a-z]+ : PWD=\/home\/[a-z]+ ; USER=root ; COMMAND=\/bin\/sh -c echo BECOME-SUCCESS-[a-z]+ ; \/usr\/bin\/python3$'
+  when: (ansible_distribution == "Debian" and ansible_distribution_major_version|int == 11)
+

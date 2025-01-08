@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ turnserver: [0-9]+: A peer IP .* denied in the range: .*

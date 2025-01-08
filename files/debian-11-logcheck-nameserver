@@ -1,0 +1,31 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Accepting TCP connection failed: socket is not connected
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: Accepting TCP connection failed: connection refused
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: DNS format error from .* resolving .* invalid response
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: bad cookie from .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: NOTIMP unexpected RCODE resolving .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: SERVFAIL unexpected RCODE resolving .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: REFUSED unexpected RCODE resolving .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: _default: sending trust-anchor-telemetry query '.*'
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: broken trust chain resolving .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client .*( query \(cache\))* '.*' denied
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client .*: received notify for zone '.*'
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client .*: transfer of '.*': (AXFR|IXFR) ended
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: clients-per-query (de|in)creased to [0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: increase from [0-9]+ to [0-9]+ RRL entries with [0-9]+ bins; average search length [0-9\.]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: insecurity proof failed resolving .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: managed-keys-zone: Key [0-9]+ for zone \. is now trusted \(acceptance timer complete\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: missing expected cookie from .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: no valid (DS|RRSIG) resolving '.*/.*/IN': [0-9\.]+#[0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: resolver priming query complete
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: success resolving .* after disabling qname minimization due to 'failure'
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: transfer of '.*' from [0-9\.]+#[0-9]+: (connected using|Transfer completed:) .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: transfer of '.*' from [0-9\.]+#[0-9]+: Transfer status: (success|up to date)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: transfer of '.*' from [0-9\.]+#[0-9]+: connected using [0-9\.]+#[0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: trust-anchor-telemetry .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]: zone .*/IN: notify from [0-9\.]+#[0-9]+: serial [0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]:\s+validating .*: got insecure response; parent indicates it should be secure
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ named\[[0-9]+\]:\s+validating .*: no valid signature found
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client @.*#[0-9]+\ \(.*\): transfer of '.*\/IN': (AXFR|IXFR) started \(serial .*\)$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client @.*#[0-9]+\/key .*: updating zone '.*' .*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client @.*\/key .*: signer ".*" approved$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ named\[[0-9]+\]: client @.*#[0-9]+\ \(.*\): bad zone transfer request: '.*\.dlite\.de\/IN': non-authoritative zone \(NOTAUTH\)

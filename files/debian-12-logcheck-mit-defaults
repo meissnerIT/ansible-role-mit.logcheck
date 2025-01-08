@@ -1,0 +1,33 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ chronyd\[[0-9]+\]: Selected source .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ chronyd\[[0-9]+\]: Source .* replaced with .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Delivery complete, .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: From: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Message-Id: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Rescanning queue\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Sending failed: Temporary error in gethostbyname
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Sent file\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Starting delivery.*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Trigger pulled\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Failed: Connect failed
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Succeeded: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ \(.*\).*: pam_unix\(systemd-user:session\): session (open|clos)ed for user .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: Root login accepted for forced command\..*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: Failed none for invalid user .* from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: pam_env\(sshd:session\): deprecated reading of user environment enabled
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Activating special unit exit\.target\.\.\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: (Reloading|Reloaded) .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Data hash table of .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: .* Journal header limits reached or header out-of-date, rotating\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Failed to set ACL on .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: The system will reboot at .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Activating via systemd: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Successfully activated service .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ ansible-.*[[0-9]+\]: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ python3[[0-9]+\]: ansible-.*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel:.*perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: hrtimer: interrupt took [0-9]+ ns
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: rsyslog\.service: Sent signal SIGHUP to main process [0-9]+ \(rsyslogd\) on client request\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: data-check of RAID array md[0-9]+
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: md[0-9]+: data-check done\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ rsyslogd.*: \[origin software="rsyslogd" swVersion=".*" x-pid="[0-9]+" x-info="https:\/\/www\.rsyslog\.com"\] rsyslogd was HUPed

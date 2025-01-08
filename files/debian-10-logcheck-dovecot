@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dovecot: auth: Warning: auth client [0-9]+ disconnected with [0-9]+ pending requests: EOF

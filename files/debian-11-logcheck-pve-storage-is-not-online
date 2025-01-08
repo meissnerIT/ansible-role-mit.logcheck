@@ -1,0 +1,4 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ pvestatd\[[0-9]+\]: storage '.*' is not online
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] CIFS: VFS: \\\\[0-9\.]+ sends on sock [0-9a-z]+ stuck for [0-9]+ seconds
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] CIFS: VFS: \\\\[0-9\.]+ Error -11 sending data on socket to server
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[[\.0-9]+\] CIFS: reconnect tcon failed rc = -512

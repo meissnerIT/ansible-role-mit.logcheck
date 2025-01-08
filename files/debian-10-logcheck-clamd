@@ -1,0 +1,13 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamav-milter: ClamAV: mi_stop=1
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamav-milter\[[0-9]+\]: (Starting|Stopping) Sendmail milter plugin for ClamAV: clamav-milter.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .* Activating the newly loaded database\.\.\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .* Database correctly reloaded .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .* Reading databases from /var/lib/clamav
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .* SIGHUP caught: re-opening log file\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .* SelfCheck: Database modification detected. Forcing reload.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .* SelfCheck: Database status OK.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: .*INSTREAM: Size limit reached, \(requested: [0-9]+, max: [0-9]+\)
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LibClamAV Warning: cli_tnef: file truncated, returning CLEAN
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LibClamAV info: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ clamd\[[0-9]+\]: LibClamAV Warning: PNG: Unexpected early end-of-file\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ freshclam\[[0-9]+\]: .*
