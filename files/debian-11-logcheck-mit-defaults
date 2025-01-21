@@ -42,6 +42,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: exited MaxStartups throttling after .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: send_error: write: Connection reset by peer
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: sshd\[[0-9]+\]: channel [0-9]+: open failed: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Condition check resulted in fast remote file copy program daemon being skipped\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: New session [a-z0-9]+ of user [0-9a-zA-Z]+\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Removed session [a-z0-9]+\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Session [a-z0-9]+ logged out\. Waiting for processes to exit\.
