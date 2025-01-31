@@ -1,4 +1,6 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: warning: valid_ipv4_hostaddr: .s
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: .*\[.*\]: SASL (LOGIN|PLAIN) authentication failed: .*, sasl_username=.*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: improper command pipelining after .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: Connection reset by peer
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: lost connection
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: disconnect from .*
