@@ -20,7 +20,7 @@
 
 # Security Events for sudo must be placed in /etc/logcheck/violations.ignore.d/local
 # See roles/mit.zabbix-agent.check-upgrades/tasks/default.yml
-- name: logcheck-local-inventory_hostname -> /etc/logcheck/ignore.d.server/mit-defaults-local
+- name: logcheck-local-inventory_hostname -> /etc/logcheck/ignore.d.server/mit-defaults-local # noqa: name[casing]
   ansible.builtin.copy:
     src: "{{ copy_file }}"
     dest: /etc/logcheck/ignore.d.server/mit-defaults-local
@@ -35,6 +35,7 @@
   ansible.builtin.copy:
     src: "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-{{ item }}"
     dest: /etc/logcheck/ignore.d.server/mit-defaults-{{ item }}
+    mode: '644'
   with_items:
     - "{{ mit_logcheck }}"
   when: mit_logcheck is defined
@@ -60,6 +61,6 @@
     mode: '0644'
     path: /etc/logcheck/violations.ignore.d/local
     # ansible
-    line: "^\\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: [a-z]+ : PWD=\\/home\\/[a-z]+ ; USER=root ; COMMAND=\\/bin\\/sh -c echo BECOME-SUCCESS-[a-z]+ ; \\/usr\\/bin\\\
-      /python3$"
+    line: "^\\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: [a-z]+ : PWD=\\/home\\/[a-z]+ ; USER=root \
+      ; COMMAND=\\/bin\\/sh -c echo BECOME-SUCCESS-[a-z]+ ; \\/usr\\/bin\\/python3$"
   when: (ansible_distribution == "Debian" and ansible_distribution_major_version|int == 11)

@@ -1,0 +1,5 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: .* entered (allmulticast|promiscuous) mode
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: .*: renamed from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: docker0: .* entered (blocking|disabled) state
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-networkd\[[0-9]+\]: .* Link UP
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-networkd\[[0-9]+\]: docker0: Gained carrier
