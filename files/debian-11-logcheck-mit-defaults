@@ -1,15 +1,17 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Condition check resulted in fast remote file copy program daemon being skipped\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/local/sbin/zabbix-check-upgrades: Restarting .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ansible-.*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Can't synchronise: no majority
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Selected source .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Source .* replaced with .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/local/sbin/zabbix-check-upgrades: Restarting .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ cron-apt:.*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Activating via systemd: .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Successfully activated service 'org.freedesktop.timedate1'
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: Discarding packet with bogus hlen\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fstrim\[[0-9]+\]: .* trimmed on .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] TCP: tcp_parse_options: Illegal window scaling value 15 > 14 received
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] TCP: request_sock_TCP: Possible SYN flooding on port 22\. Sending cookies\.  Check SNMP counters\.
-^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hrtimer: interrupt took [0-9]+ ns
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] TCP: tcp_parse_options: Illegal window scaling value 15 > 14 received
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Delivery complete, .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: From: .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Message-Id: .*
@@ -21,33 +23,31 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Failed: Connect failed
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Failed: Connect failed
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: smtp: Succeeded: .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ansible-.*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ python3\[[0-9]+\]: ansible-
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: .* \[preauth\]
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Invalid user .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Connection (closed|reset) by .* port [0-9]+
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Failed none for invalid user .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Failed password for invalid user .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Bad remote protocol version identification: .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received signal 15; terminating\.
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from .* Bye Bye
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Invalid user .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: PAM service\(sshd\) ignoring max retries; [0-9]+ > [0-9]+
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Protocol major versions differ: 2 vs\. [0-1]+
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: banner exchange: Connection from .*: could not read protocol version
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Connection (closed|reset) by .* port [0-9]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received disconnect from .* Bye Bye
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Received signal 15; terminating\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: Root login accepted for forced command\..*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: banner exchange: Connection from .* port [0-9]+: invalid format
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: kex_exchange_identification: .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: beginning MaxStartups throttling
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: banner exchange: Connection from .*: could not read protocol version
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: drop connection .* past MaxStartups
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: exited MaxStartups throttling after .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Bad remote protocol version identification: .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: Protocol major versions differ: 2 vs\. [0-1]+
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: beginning MaxStartups throttling
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: kex_exchange_identification: .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: error: send_error: write: Connection reset by peer
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: exited MaxStartups throttling after .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ sshd\[[0-9]+\]: sshd\[[0-9]+\]: channel [0-9]+: open failed: .*
-^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Condition check resulted in fast remote file copy program daemon being skipped\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: New session [a-z0-9]+ of user [0-9a-zA-Z]+\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Removed session [a-z0-9]+\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Session [a-z0-9]+ logged out\. Waiting for processes to exit\.
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Synchronized to time server for the first time .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Initial synchronization to time server .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Synchronized to time server for the first time .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Timed out waiting for reply from .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-tmpfiles\[[0-9]+\]: \[/usr/lib/tmpfiles.d/.*\.conf:1\] .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-udevd\[[0-9]+\]: Using default interface naming scheme 'v[0-9]+'\.
@@ -57,6 +57,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[1\]: Startup finished in [0-9\.]+s\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[1\]: getty@tty1\.service: Current command vanished from the unit file, execution of the command list won't be resumed\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Created|Removed) slice .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Stopping|Stopped) .*\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: .*: Consumed .* CPU time\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: .*: Sen(ding|t) signal [A-Z0-9]+ to .* on client request\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: .*\.(mount|scope|service|socket|timer): Succeeded\.
@@ -70,6 +71,6 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: gpgconf: fatal error \(exit status 1\)
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: gpgconf: running /usr/bin/gpg-agent failed \(exitcode=2\): General error
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd\[[0-9]+\]: (Stopping|Stopped) .*\.
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zabbix_agentd\[[0-9]+\]: Starting Zabbix Agent .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zabbix_agentd\[[0-9]+\]: Press Ctrl\+C to exit\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ zabbix_agentd\[[0-9]+\]: Starting Zabbix Agent .*
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ kernel:( \[ *[[:digit:]]+\.[[:digit:]]+\])? hrtimer: interrupt took [0-9]+ ns
