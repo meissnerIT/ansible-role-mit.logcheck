@@ -7,6 +7,7 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ chronyd\[[0-9]+\]: Source .* replaced with .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Activating via systemd: .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Successfully activated service .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ fstrim\[[0-9]+\]: .* trimmed on .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: data-check of RAID array md[0-9]+
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: md[0-9]+: data-check done\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: hrtimer: interrupt took [0-9]+ ns
@@ -26,11 +27,11 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: Failed none for invalid user .* from .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: Root login accepted for forced command\..*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: pam_env\(sshd:session\): deprecated reading of user environment enabled
-^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[1\]: .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: .* Journal header limits reached or header out-of-date, rotating\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Data hash table of .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Failed to set ACL on .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: The system will reboot at .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[1\]: .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: (Reloading|Reloaded) .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Activating special unit exit\.target\.\.\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Startup finished in .*
