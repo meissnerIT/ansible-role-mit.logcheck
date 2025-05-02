@@ -1,0 +1,1 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ mysqld\[[0-9]+\]: .* \[Warning\] .* IP address '.*' could not be resolved: Name or service not known
