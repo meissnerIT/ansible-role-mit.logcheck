@@ -1,30 +1,20 @@
 ---
-- name: Install logcheck
-  ansible.builtin.apt:
-    pkg:
-      - logcheck
-      - logcheck-database # required with Debian 11
-
-- name: Add user logcheck to group systemd-journal
-  ansible.builtin.user:
-    name: logcheck
-    groups: systemd-journal
-    append: true
-  when: (ansible_distribution == "Debian" and ansible_distribution_major_version|int >= 12)
+- name: Include ansible_system.yml
+  ansible.builtin.include_tasks: "{{ ansible_system }}.yml"
 
 - name: "Logcheck rules: mit-defaults"
   ansible.builtin.copy:
     src: "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-mit-defaults"
-    dest: /etc/logcheck/ignore.d.server/mit-defaults
-    mode: '644'
+    dest: "{{ etc_prefix }}/etc/logcheck/ignore.d.server/mit-defaults"
+    mode: "644"
 
 # Security Events for sudo must be placed in /etc/logcheck/violations.ignore.d/local
 # See roles/mit.zabbix-agent.check-upgrades/tasks/default.yml
 - name: logcheck-local-inventory_hostname -> /etc/logcheck/ignore.d.server/mit-defaults-local # noqa: name[casing]
   ansible.builtin.copy:
     src: "{{ copy_file }}"
-    dest: /etc/logcheck/ignore.d.server/mit-defaults-local
-    mode: '644'
+    dest: "{{ etc_prefix }}/etc/logcheck/ignore.d.server/mit-defaults-local"
+    mode: "644"
   vars:
     copy_file: "{{ lookup('ansible.builtin.first_found', files, errors='ignore') }}"
     files:
@@ -34,8 +24,8 @@
 - name: "Logcheck rules: special packages"
   ansible.builtin.copy:
     src: "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-{{ item }}"
-    dest: /etc/logcheck/ignore.d.server/mit-defaults-{{ item }}
-    mode: '644'
+    dest: "{{ etc_prefix }}/etc/logcheck/ignore.d.server/mit-defaults-{{ item }}"
+    mode: "644"
   with_items:
     - "{{ mit_logcheck }}"
   when: mit_logcheck is defined
@@ -44,8 +34,8 @@
   ansible.builtin.copy:
     src: "{{ lookup('first_found', findme) }}"
     # mit-defaults-mariadb-10.5 will be ignored by logcheck because of the dot
-    dest: /etc/logcheck/ignore.d.server/mit-defaults-mariadb-{{ mariadb_server_version | replace('.', '_') }}
-    mode: '644'
+    dest: "{{ etc_prefix }}/etc/logcheck/ignore.d.server/mit-defaults-mariadb-{{ mariadb_server_version | replace('.', '_') }}"
+    mode: "644"
   vars:
     findme:
       - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}-logcheck-mariadb-{{ mariadb_server_version | replace('.', '_') }}"
@@ -58,9 +48,10 @@
   # sudo -u logcheck logcheck -o -t -d -l /var/log/auth.log
   ansible.builtin.lineinfile:
     create: true
-    mode: '0644'
-    path: /etc/logcheck/violations.ignore.d/local
+    mode: "0644"
+    path: "{{ etc_prefix }}/etc/logcheck/violations.ignore.d/local"
     # ansible
-    line: "^\\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: [a-z]+ : PWD=\\/home\\/[a-z]+ ; USER=root \
+    line:
+      "^\\w{3} [ :0-9]{11} [._[:alnum:]-]+ sudo: [a-z]+ : PWD=\\/home\\/[a-z]+ ; USER=root \
       ; COMMAND=\\/bin\\/sh -c echo BECOME-SUCCESS-[a-z]+ ; \\/usr\\/bin\\/python3$"
   when: (ansible_distribution == "Debian" and ansible_distribution_major_version|int == 11)

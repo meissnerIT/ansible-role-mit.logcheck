@@ -1,0 +1,30 @@
+---
+- name: Install logcheck
+  ansible.builtin.package:
+    name: logcheck
+  when: users_have_been_moved_to_sudo
+
+- name: Add user logcheck to group wheel
+  ansible.builtin.user:
+    name: logcheck
+    groups: wheel
+    append: true
+  when: users_have_been_moved_to_sudo
+
+- name: Set SENDMAILTO
+  ansible.builtin.lineinfile:
+    path: /usr/local/etc/logcheck/logcheck.conf
+    regexp: "^SENDMAILTO="
+    line: 'SENDMAILTO="{{ alias_root }}"'
+
+- name: Make /var/log/auth.log readable for group wheel
+  ansible.builtin.file:
+    path: /var/log/auth.log
+    mode: "640"
+
+- name: Make /var/log/auth.log readable for group wheel within /etc/newsyslog.conf
+  ansible.builtin.lineinfile:
+    path: /etc/newsyslog.conf
+    regexp: "^/var/log/auth.log"
+    # 600 → 640
+    line: "/var/log/auth.log\t\t\t640  7\t   1000 @0101T JC"

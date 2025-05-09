@@ -1,0 +1,2 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: Root login accepted for forced command\..*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: Connection closed by .*

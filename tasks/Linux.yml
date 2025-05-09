@@ -1,0 +1,13 @@
+---
+- name: Install logcheck
+  ansible.builtin.apt:
+    pkg:
+      - logcheck
+      - logcheck-database # required with Debian 11
+
+- name: Add user logcheck to group systemd-journal
+  ansible.builtin.user:
+    name: logcheck
+    groups: systemd-journal
+    append: true
+  when: (ansible_distribution == "Debian" and ansible_distribution_major_version|int >= 12)
