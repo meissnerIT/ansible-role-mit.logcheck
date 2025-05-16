@@ -1,5 +1,6 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: Condition check resulted in fast remote file copy program daemon being skipped\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ /usr/local/sbin/zabbix-check-upgrades: Restarting .*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ VGAuthService\[[0-9]+\]: .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ ansible-.*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Can't synchronise: no majority
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ chronyd\[[0-9]+\]: Selected source .*
@@ -46,6 +47,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: New session [a-z0-9]+ of user [0-9a-zA-Z]+\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Removed session [a-z0-9]+\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Session [a-z0-9]+ logged out\. Waiting for processes to exit\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: Watching system buttons on .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Initial synchronization to time server .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Synchronized to time server for the first time .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ systemd-timesyncd\[[0-9]+\]: Timed out waiting for reply from .*
