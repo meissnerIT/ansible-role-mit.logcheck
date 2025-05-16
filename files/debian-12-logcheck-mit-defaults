@@ -10,7 +10,7 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ dbus-daemon\[[0-9]+\]: \[system\] Successfully activated service .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ fstrim\[[0-9]+\]: .* trimmed on .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: data-check of RAID array md[0-9]+
-^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: md[0-9]+: data-check done\.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] md: delaying data-check of md[0-9]+ until md[0-9]+ has finished \(they share one or more physical units\)
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: hrtimer: interrupt took [0-9]+ ns
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel:.*perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Delivery complete, .*
