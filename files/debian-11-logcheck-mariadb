@@ -1,2 +1,2 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ mariadbd\[[0-9]+\]: .* \[Warning\] Aborted connection [0-9]+ to db: .*
-^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ mariadbd\[[0-9]+\]: .* \[Warning\] Access denied for user 'username_here'@'localhost' \(using password: YES\)
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ mariadbd\[[0-9]+\]: .* \[Warning\] Access denied for user 'username_here'@'localhost'.*
