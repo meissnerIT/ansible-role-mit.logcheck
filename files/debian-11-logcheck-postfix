@@ -4,6 +4,8 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: Trusted TLS connection established to .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: Untrusted TLS connection established to .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: connect to .* Cannot assign requested address
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: .*, sasl_method=LOGIN, sasl_username=.*
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: .*Recipient address rejected: need fully-qualified address.*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: Connection reset by peer
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: lost connection
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: disconnect from .*
