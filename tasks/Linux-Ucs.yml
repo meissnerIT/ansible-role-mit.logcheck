@@ -1,0 +1,6 @@
+---
+- name: Set SENDMAILTO
+  ansible.builtin.lineinfile:
+    path: /etc/logcheck/logcheck.conf
+    regexp: "^SENDMAILTO="
+    line: 'SENDMAILTO="{{ alias_root }}"'
