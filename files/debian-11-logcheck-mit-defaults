@@ -11,6 +11,7 @@
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhclient\[[0-9]+\]: Discarding packet with bogus hlen\.
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ fstrim\[[0-9]+\]: .* trimmed on .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] TCP: request_sock_TCP: Possible SYN flooding on port [0-9]+\. Sending cookies\.  Check SNMP counters\.
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] clocksource: Long readout interval, skipping watchdog check: .*
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] TCP: tcp_parse_options: Illegal window scaling value 15 > 14 received
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ kernel: \[ *[0-9]+\.[0-9]+\] perf: interrupt took too long \([0-9]+ > [0-9]+\), lowering kernel.perf_event_max_sample_rate to [0-9]+
 ^\w{3} [ :0-9]{11} [._[:alnum:]-]+ nullmailer-send\[[0-9]+\]: Delivery complete, .*
