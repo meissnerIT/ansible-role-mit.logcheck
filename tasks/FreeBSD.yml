@@ -1,15 +1,18 @@
 ---
+- name: Check if users_have_been_moved_to_sudo
+  ansible.builtin.assert:
+    that: users_have_been_moved_to_sudo | default(False)
+    fail_msg: Without users_have_been_moved_to_sudo logcheck is not supported
+
 - name: Install logcheck
   ansible.builtin.package:
     name: logcheck
-  when: users_have_been_moved_to_sudo
 
 - name: Add user logcheck to group wheel
   ansible.builtin.user:
     name: logcheck
     groups: wheel
     append: true
-  when: users_have_been_moved_to_sudo
 
 - name: Set SENDMAILTO
   ansible.builtin.lineinfile:
