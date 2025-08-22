@@ -56,6 +56,7 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: error: maximum authentication attempts exceeded for root from .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: error: send_error: write: Broken pipe
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: exited MaxStartups throttling after .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: fatal: userauth_finish: send failure packet: Connection reset by peer \[preauth\]
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: pam_env\(sshd:session\): deprecated reading of user environment enabled
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: ssh_dispatch_run_fatal: Connection from invalid user .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd\[[0-9]+\]: userauth_pubkey: signature algorithm .* not in PubkeyAcceptedAlgorithms \[preauth\]
