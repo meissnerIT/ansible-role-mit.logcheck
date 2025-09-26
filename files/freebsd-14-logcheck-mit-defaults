@@ -4,10 +4,21 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: .*: link state changed to .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: Limiting closed port RST response from .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Accepted publickey for .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Address .* maps to .*, but this does not map back to the address\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Connection closed by .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Connection reset by .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Disconnected from invalid user .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Disconnected from user .*
-^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Received disconnect from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Disconnecting authenticating user .*: Too many authentication failures \[preauth\]
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Invalid user .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Postponed publickey for .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Root login accepted for forced command\..*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Received disconnect from .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: Fssh_kex_exchange_identification: read: Connection reset by peer
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: Fssh_kex_protocol_error: type [0-9]+ seq [0-9]+ \[preauth\]
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: PAM: Authentication error for illegal user .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: Received disconnect from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: maximum authentication attempts exceeded for root from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: reverse mapping checking getaddrinfo for .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ syslogd: kernel boot file is /boot/kernel/kernel
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ syslogd: last message repeated [0-9]+ times
