@@ -3,6 +3,7 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: .*: changing name to .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: .*: link state changed to .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: Limiting closed port RST response from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ newsyslog\[[0-9]+\]: logfile turned over due to .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Accepted publickey for .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Address .* maps to .*, but this does not map back to the address\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Connection closed by .*
@@ -12,8 +13,8 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Disconnecting authenticating user .*: Too many authentication failures \[preauth\]
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Invalid user .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Postponed publickey for .*
-^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Root login accepted for forced command\..*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Received disconnect from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Root login accepted for forced command\..*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: Fssh_kex_exchange_identification: read: Connection reset by peer
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: Fssh_kex_protocol_error: type [0-9]+ seq [0-9]+ \[preauth\]
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: PAM: Authentication error for illegal user .*
