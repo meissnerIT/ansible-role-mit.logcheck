@@ -4,6 +4,8 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: .*: link state changed to .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ kernel: Limiting closed port RST response from .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ newsyslog\[[0-9]+\]: logfile turned over due to .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ ntpd\[[0-9]+\]: IMSG_CONSTRAINT_KILL for invalid id .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ ntpd\[[0-9]+\]: recvmsg .*: No route to host
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Accepted publickey for .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Address .* maps to .*, but this does not map back to the address\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Connection closed by .*
