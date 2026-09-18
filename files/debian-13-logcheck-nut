@@ -1,0 +1,10 @@
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-driver.*\[[0-9]+\]: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-monitor\[[0-9]+\]: Communications with UPS .* established
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-monitor\[[0-9]+\]: Communications with UPS .* lost
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-monitor\[[0-9]+\]: Network UPS Tools upsmon .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-monitor\[[0-9]+\]: Poll UPS \[.*\] failed - Data stale
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-monitor\[[0-9]+\]: UPS .* is unavailable
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ nut-server\[[0-9]+\]: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-tmpfiles\[[0-9]+\]: /usr/lib/tmpfiles.d/nut-common-tmpfiles.conf:8: Duplicate line for path "/run/nut", ignoring.
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ upsd[[0-9]+\]: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ usbhid-ups\[[0-9]+\]: .*

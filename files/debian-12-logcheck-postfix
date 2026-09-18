@@ -1,9 +1,20 @@
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: Connection reset by peer
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: lost connection
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: disconnect from .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: hostname .* does not .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: valid_hostname: misplaced hyphen: .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: Untrusted TLS connection established to .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: Trusted TLS connection established to .*
-^\w{3} [ :0-9]{11} [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: connect to .* Cannot assign requested address
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/cleanup\[[0-9]+\]: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/lmtp\[[0-9]+\]: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: .* breaking line .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: Trusted TLS connection established to .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: Untrusted TLS connection established to .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtp\[[0-9]+\]: connect to .* Cannot assign requested address
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: .* sasl_method=.* sasl_username=.*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: .*Sender address rejected.*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: NOQUEUE: reject: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: Connection reset by peer
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: SSL_accept error from .*: lost connection
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: disconnect from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: improper command pipelining after CONNECT from .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: using backwards-compatible default setting smtpd_relay_before_recipient_restrictions=no to reject recipient .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: .*: SASL .* authentication failed: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: TLS library problem: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: hostname .* does not .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/smtpd\[[0-9]+\]: warning: valid_hostname: misplaced hyphen: .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ postfix\/verify\[[0-9]+\]: cache btree:/var/lib/postfix/verify_cache full cleanup: retained=[0-9]+ dropped=[0-9]+ entries$
