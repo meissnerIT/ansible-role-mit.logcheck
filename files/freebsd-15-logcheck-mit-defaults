@@ -17,6 +17,7 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Disconnecting authenticating user .*: Too many authentication failures \[preauth\]
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Invalid user .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Postponed publickey for .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Read error from remote host .* port [0-9]+: Operation timed out
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Received disconnect from .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: Root login accepted for forced command\..*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ sshd.*\[[0-9]+\]: error: Fssh_kex_exchange_identification: read: Connection reset by peer
