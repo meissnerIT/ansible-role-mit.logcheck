@@ -67,6 +67,7 @@
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: .* Journal header limits reached or header out-of-date, rotating\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Data hash table of .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Failed to set ACL on .*
+^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-journald\[[0-9]+\]: Under memory pressure, flushing caches\.
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd-logind\[[0-9]+\]: The system will reboot at .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[1\]: .*
 ^(\w{3} [ :0-9]{11}|[0-9T:.+-]{32}) [._[:alnum:]-]+ systemd\[[0-9]+\]: (Reloading|Reloaded) .*
